@@ -1,5 +1,4 @@
 'use client';
-import TextareaAutosize from '@mui/material/TextareaAutosize'
 import { createClient } from '@supabase/supabase-js'
 import { useState, useEffect } from 'react'
 import { getThoughts } from '../components/getThoughts'
