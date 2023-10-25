@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 const supabase = createClient(
-  'https://oodbxjicokcxmmclwojn.supabase.co', 
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9vZGJ4amljb2tjeG1tY2x3b2puIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU2NDQ3ODEsImV4cCI6MjAwMTIyMDc4MX0.RJHxPMDTBwx16ZElgEiOGNesdJac6340SKI5KAtih0k'
+  process.env.SUPABASEURL, 
+  process.env.SUPABASEAPI
 )
 
 export const getThoughts = async(table) => {
