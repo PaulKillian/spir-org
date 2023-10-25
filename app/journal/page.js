@@ -1,13 +1,11 @@
 'use client';
-// import TextareaAutosize from '@mui/material/TextareaAutosize'
 import { createClient } from '@supabase/supabase-js'
 import { useState, useEffect } from 'react'
 import { getThoughts } from '../components/getThoughts'
 
-// Create a single supabase client for interacting with your database
 export const supabase = createClient(
-  'https://oodbxjicokcxmmclwojn.supabase.co', 
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9vZGJ4amljb2tjeG1tY2x3b2puIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU2NDQ3ODEsImV4cCI6MjAwMTIyMDc4MX0.RJHxPMDTBwx16ZElgEiOGNesdJac6340SKI5KAtih0k'
+  process.env.SUPABASEURL, 
+  process.env.SUPABASEAPI
 )
 
 export default function Journal() {
