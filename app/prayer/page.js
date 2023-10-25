@@ -129,20 +129,6 @@ export default function Prayer() {
   return (
     <main>
       <Navbar />
-      {/* <Image className='-z-50'
-        src={dragon}
-        alt="a dragon"
-        style={{objectFit: "contain"}}
-        // blurDataURL="data:..." automatically provided
-        // placeholder="blur" // Optional blur-up while loading
-      /> */}
-      {/* <h1 className={'text-2xl font-semibold'}>1 Corinthians 4:20 For the kingdom of God does not consist in words but in power.</h1>
-      <h1 className={'text-1xl font-semibold'}>Matthew 7:7 Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.</h1>
-      <h1 className={'text-1xl font-semibold'}>James4:3 When you ask, you do not receive, because you ask with wrong motives, that you may spend what you get on your pleasures.</h1>
-      <h1 className={'text-1xl font-semibold'}>Ephesians 1:3 Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ.</h1>
-      <h1 className={'text-1xl font-semibold'}>Psalm 84:11 For the Lord God is a sun and shield; The Lord gives grace and glory;
-        No good thing does He withhold from those who walk uprightly.</h1>
-      <h1 className={'text-1xl font-semibold'}>Matthew 7:11 If you then, being evil, know how to give good gifts to your children, how much more will your Father who is in heaven give what is good to those who ask Him!</h1> */}
       <div>
         {need && 
           <div className={'grid grid-cols-3'}>
